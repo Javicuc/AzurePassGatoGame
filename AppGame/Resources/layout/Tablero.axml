@@ -5,27 +5,38 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:gravity="center"
-    android:background="@android:color/background_light">
+    android:background="@android:color/background_light"
+    android:paddingBottom="10dp">
+    <TextView
+        android:text="javier.lopez@alumnos.udg.mx, Lopez Rangel Javier Alejandro"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:textSize="13sp" />
     <LinearLayout
         android:orientation="horizontal"
         android:id="@+id/linearLayout0"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp">
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
         <TextView
             android:text="Turno Jugador:"
             android:id="@+id/textView0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textColor="@android:color/holo_blue_dark"
             android:paddingLeft="20dp" />
         <TextView
             android:id="@+id/tvTurnoJugador"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:textColor="@android:color/holo_red_dark" />
@@ -42,7 +53,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:paddingLeft="10dp"
             android:textColor="@android:color/holo_blue_dark" />
         <TextView
@@ -50,7 +61,7 @@
             android:id="@+id/tvWinsJugador1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textColor="@android:color/holo_orange_light" />
@@ -59,14 +70,14 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/textView3"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textColor="@android:color/holo_blue_dark" />
         <TextView
             android:text="0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/tvWinsJugador2"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textColor="@android:color/holo_green_light" />
@@ -163,11 +174,11 @@
     <Button
         android:text="@string/reiniciar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:id="@+id/btReiniciar"
         android:layout_marginLeft="17dp"
         android:layout_marginRight="17dp"
-        android:layout_marginTop="10dp"
-        android:drawableTint="#00000000"
-        android:background="@drawable/buttonstyleapp" />
+        android:layout_marginTop="2dp"
+        android:background="@drawable/buttonstyleapp"
+        android:textSize="25sp" />
 </LinearLayout>
