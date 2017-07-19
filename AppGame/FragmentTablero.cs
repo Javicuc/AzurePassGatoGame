@@ -16,24 +16,16 @@ namespace AppGame
     public class FragmentTablero : Fragment
     {
         public string[] tablero { get; set; }
-        public Button[] btTablero { get; set; }
-        public int jugadas { get; set; }
-        public int winsJugador1 { get; set; }
-        public int winsJugador2 { get; set; }
-        public bool turnoActual { get; set; }
+        public List<Button> btTablero { get; set; }
+        public int wins1 { get; set; }
+        public int wins2 { get; set; }
+        public int jugadaActual { get; set; }
+        public Boolean turnoActual { get; set; }
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            this.RetainInstance = true;
-        }
-
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-            return base.OnCreateView(inflater, container, savedInstanceState);
+            RetainInstance = true;
         }
     }
 }
